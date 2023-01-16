@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="webUrlVer2">https://payapp.kr/api/rapi.html</string>
+    <string name="WebUrlVer1">https://payapp.kr/api/sp_call.html</string>
+</resources>

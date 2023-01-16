@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PayApp Sample</string>
+    <string name="sellerName">판매자명</string>
+    <string name="reqNotePaymentUserPh">고객의 휴대전화번호 입력</string>
+    <string name="phoneBook">연락처</string>
+    <string name="goodName">상품명</string>
+    <string name="goodPrice">상품금액</string>
+    <string name="won">원</string>
+    <string name="totalPrice">총액</string>
+    <string name="sellPhone">휴대폰</string>
+    <string name="card">카드</string>
+    <string name="toss">토스</string>
+    <string name="_PAYTYPE_6">계좌이체</string>
+    <string name="_PAYTYPE_7">가상계좌</string>
+    <string name="inputCustomerMemo">고객에게 전달할 메시지를 입력해 주세요</string>
+    <string name="checkRemoteCustomerAddrReq">SMS 결제 고객의 주소정보 요청 시 체크</string>
+    <string name="requestPayappCard">PayApp 카드결제</string>
+    <string name="requestPayappSendMoney">PayApp 계좌이체</string>
+    <string name="requestIsp">ISP 결제</string>
+    <string name="completeSmsAccount">SMS 결제를 요청하였습니다</string>
+    <string name="loading">로딩중</string>
+    <string name="installPlease">해당 어플을 설치해 주세요.</string>
+
+    <string name="scheme_remote_payment">원격결제</string>
+    <string name="scheme_note_payment">수기결제</string>
+    <string name="scheme_nfc_card_payment">NFC결제(카드)</string>
+    <string name="scheme_nfc_samsung_payment">NFC결제(삼성페이)</string>
+    <string name="scheme_regular_payment">정기결제</string>
+    <string name="scheme_cash_receipt">현금영수증</string>
+
+    <string name="toss_request_price">* 토스 결제는 10,000원 이상입니다.</string>
+    <string name="str_permission_denied">앱 사용에 필요한 권한을 허락해야만 앱을 사용할 수 있습니다.</string>
+</resources>

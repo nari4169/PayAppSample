@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- renewal color -->
+    <color name="new_bgGray">#e0e0e0</color>
+    <color name="new_bgLightGray">#f5f5f5</color>
+    <color name="new_bgMediumGray">#ebebeb</color>
+    <color name="new_white">#ffffff</color>
+    <color name="new_white_alpha">#30ffffff</color>
+    <color name="new_black">#222222</color>
+    <color name="new_black_alpah30">#70222222</color>
+    <color name="new_darkGray">#666666</color>
+    <color name="new_darkGray_alpha30">#70666666</color>
+    <color name="new_gray">#999999</color>
+    <color name="new_mediumGray">#bdbdbd</color>
+    <color name="new_lightGray">#e8e8ef</color>
+    <color name="new_darkBlue">#5a6375</color>
+    <color name="new_mediumBlue">#566186</color>
+    <color name="new_lightBlue">#c6cce5</color>
+    <color name="new_blue">#606c96</color>
+    <color name="new_darkCyan">#3087e1</color>
+    <color name="new_cyan">#3696fa</color>
+    <color name="new_blueGreen">#35a6a9</color>
+    <color name="new_wine">#a54786</color>
+    <color name="new_yellow">#ffb26a</color>
+    <color name="new_red">#fe132f</color>
+    <color name="new_bgLightGreen">#eefdee</color>
+    <color name="new_bgLightWine">#fff2f2</color>
+    <color name="new_bgLightYellow">#fdfaf0</color>
+    <color name="new_lightGreen">#35a6a9</color>
+    <color name="new_lightWine">#f77a81</color>
+    <color name="new_lightYellow">#fcba7d</color>
+
+</resources>

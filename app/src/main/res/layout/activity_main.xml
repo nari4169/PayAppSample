@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@drawable/rectangle_border_mediumgray_bg_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/sellerName"
+                android:textColor="@color/new_darkGray"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/sellerName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="판매자명 "
+                android:textColor="@color/new_darkBlue"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 전화번호 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_border_mediumgray_bg_white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius_edittext_medium_gray"
+                    android:hint="@string/reqNotePaymentUserPh"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:paddingLeft="5dp"
+                    android:textColorHint="@color/new_gray"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btnAddContact"
+                    android:layout_width="50dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/button_border_cyan_radius_selector"
+                    android:text="+ 추가"
+                    android:textColor="@color/new_white"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnContacts"
+                    android:layout_width="50dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/button_border_medium_blue_radius_selector"
+                    android:text="@string/phoneBook"
+                    android:textColor="@color/new_white"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:text="* 휴대번호는 010으로 시작해야 합니다."
+                android:textColor="@color/new_wine"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <!-- 상품정보 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_border_mediumgray_bg_white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etGoodName"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/radius_edittext_medium_gray"
+                    android:hint="@string/goodName"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:text="페이앱 테스트 상품"
+                    android:textColorHint="@color/new_gray"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/etGoodPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/radius_edittext_medium_gray"
+                    android:hint="@string/goodPrice"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+
+                    android:paddingLeft="5dp"
+                    android:text="1000"
+                    android:textColorHint="@color/new_gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1.3"
+                    android:gravity="center_vertical"
+                    android:text="@string/won"
+                    android:textColor="@color/new_darkGray"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btnAddGood"
+                    android:layout_width="50dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/button_border_cyan_radius_selector"
+                    android:text="+ 추가"
+                    android:textColor="@color/new_white"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnGoodDB"
+                    android:layout_width="50dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/button_border_medium_blue_radius_selector"
+                    android:text="상품DB"
+                    android:textColor="@color/new_white"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 결제수단 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_border_mediumgray_bg_white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@drawable/check_selector"
+                    android:checked="true"
+                    android:paddingLeft="3dp"
+                    android:text="@string/sellPhone"
+                    android:textColor="@color/new_darkGray"
+                    android:textSize="12dp" />
+
+
+                <CheckBox
+                    android:id="@+id/chkCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@drawable/check_selector"
+                    android:checked="true"
+                    android:paddingLeft="3dp"
+                    android:text="@string/card"
+                    android:textColor="@color/new_darkGray"
+                    android:textSize="12dp" />
+
+
+                <CheckBox
+                    android:id="@+id/chkToss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@drawable/check_selector"
+                    android:checked="true"
+                    android:paddingLeft="3dp"
+                    android:text="@string/toss"
+                    android:textColor="@color/new_darkGray"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+
+
+                <CheckBox
+                    android:id="@+id/chkRbank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@drawable/check_selector"
+                    android:checked="true"
+                    android:paddingLeft="3dp"
+                    android:text="@string/_PAYTYPE_6"
+                    android:textColor="@color/new_darkGray"
+                    android:textSize="12dp" />
+
+
+                <CheckBox
+                    android:id="@+id/chkVbank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@drawable/check_selector"
+                    android:checked="true"
+                    android:paddingLeft="3dp"
+                    android:text="@string/_PAYTYPE_7"
+                    android:textColor="@color/new_darkGray"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/toss_request_price"
+                android:textColor="@color/new_wine"
+                android:textSize="13dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_border_mediumgray_bg_white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_tax"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="과세" />
+
+                    <RadioButton
+                        android:id="@+id/rb_duty_free"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="면세" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* 개인의 경우 면세로 요청해야 합니다."
+                android:textColor="@color/new_wine"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSendMoney"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border_cyan_radius_selector"
+            android:text="@string/requestPayappSendMoney"
+            android:textColor="@color/new_white"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnPayapp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border_blue_radius_selector"
+            android:text="@string/requestPayappCard"
+            android:textColor="@color/new_white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/new_bgGray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="페이앱 연동 실행 메뉴(페이앱 앱에 로그인 필수)"
+        android:textColor="@color/new_wine"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRemotePayment"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/button_border_cyan_radius_selector"
+            android:text="@string/scheme_remote_payment"
+            android:textColor="@color/new_white"
+            android:textSize="14dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ocr_payment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border_cyan_radius_selector"
+                android:text="카메라 결제"
+                android:textColor="@color/new_white"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnNotePayment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border_blue_radius_selector"
+                android:text="수기결제"
+                android:textColor="@color/new_white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnNfcCardPayment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border_cyan_radius_selector"
+                android:text="@string/scheme_nfc_card_payment"
+                android:textColor="@color/new_white"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnNfcSamsungPayment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border_blue_radius_selector"
+                android:text="@string/scheme_nfc_samsung_payment"
+                android:textColor="@color/new_white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFixedPeriodPayment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border_cyan_radius_selector"
+                android:text="@string/scheme_regular_payment"
+                android:textColor="@color/new_white"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnCashReceipt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_border_blue_radius_selector"
+                android:text="@string/scheme_cash_receipt"
+                android:textColor="@color/new_white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
